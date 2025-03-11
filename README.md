@@ -1,66 +1,41 @@
-# Amigo Secreto (Secret Friend)
+# Amigo Secreto
 
-## Description
-This is a Secret Friend (Secret Santa) application that allows users to organize gift exchanges. Participants are randomly assigned to give a gift to another participant without revealing the assignments until the appropriate time.
+## Descripción del desafío
+En este desafío, desarrollarás una aplicación que permita a los usuarios ingresar nombres de amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
 
-## Features
-- User registration and login
-- Create and manage Secret Friend events
-- Invite participants via email
-- Random and fair assignment of gift recipients
-- Personalized wishlists for gift ideas
-- Event date reminders
-- Budget setting options
+El usuario deberá agregar nombres mediante un campo de texto y un botón "Adicionar". Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón "Sortear Amigo" seleccionará uno de los nombres de forma aleatoria, mostrando el resultado en pantalla.
 
-## Requirements
-- PHP 7.4 or higher
-- MySQL/MariaDB
-- Composer
-- Web server (Apache/Nginx)
+### Fucionalidades:
+Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
 
-## Installation
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/amigo-secreto.git
-cd amigo-secreto
-```
+Validar entrada: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
 
-2. Install dependencies
-```bash
-composer install
-```
+Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 
-3. Configure your database
-```bash
-cp .env.example .env
-# Edit .env file with your database credentials
-```
+Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
-4. Run migrations
-```bash
-php artisan migrate
-```
+## Implementación
 
-5. Generate application key
-```bash
-php artisan key:generate
-```
+### Estructura del proyecto
+Este proyecto consiste en tres archivos principales:
+- `index.html`: Contiene la estructura de la interfaz de usuario
+- `style.css`: Define el estilo visual de la aplicación
+- `app.js`: Implementa la lógica de funcionamiento
 
-6. Start the development server
-```bash
-php artisan serve
-```
+### Características implementadas:
+1. **Interfaz de usuario intuitiva**: Diseño responsivo con estilos claros y atractivos.
+2. **Gestión de amigos**: 
+   - Añadir nombres a la lista mediante un campo de texto y botón de adición
+   - Validación de entrada para evitar nombres vacíos
+   - Visualización en tiempo real de los nombres agregados
+3. **Sistema de sorteo**: 
+   - Selección aleatoria de un nombre de la lista
+   - Presentación clara del resultado del sorteo
+   - Validación para asegurar que exista al menos un nombre en la lista
 
-## Usage
-1. Register an account on the platform
-2. Create a new Secret Friend event
-3. Invite participants via email
-4. Set event parameters (date, budget, etc.)
-5. Once all participants have joined, the system will randomly assign gift recipients
-6. Participants can view who they need to give a gift to by logging into their account
+### Tecnologías utilizadas:
+- HTML5 para la estructura
+- CSS3 para el diseño y estilos
+- JavaScript vanilla para la funcionalidad
 
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+La implementación cumple con todos los requisitos solicitados, ofreciendo una experiencia de usuario fluida y una interfaz visualmente atractiva para realizar sorteos de "amigo secreto".
