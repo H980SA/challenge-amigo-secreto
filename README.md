@@ -1,4 +1,4 @@
-# Amigo Secreto (Secret Friend)
+# Amigo Secreto
 
 ## Descripción del Proyecto
 Una aplicación web simple que permite a los usuarios agregar nombres de amigos a una lista y luego realizar un sorteo aleatorio para seleccionar un "amigo secreto". Esta aplicación puede ser útil para juegos de intercambio de regalos o actividades similares.
