@@ -50,5 +50,5 @@
         
         // Mostrar el resultado
         const resultadoElement = document.getElementById('resultado');
-        resultadoElement.textContent = `¡${amigoSeleccionado} es tu amigo secreto!`;
+        resultadoElement.textContent = `El amigo secreto sorteado es: ${amigoSeleccionado}`;
     }
